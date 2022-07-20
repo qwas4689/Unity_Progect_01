@@ -27,7 +27,7 @@ public class PushObstacle : MonoBehaviour
         if (isMaxMove)
         {
             _ri.AddForce(-5f, 0f, 0f);
-            if (_obstacle.position.x <= 0f)
+            if (_obstacle.position.x <= 10f)
             {
                 isMaxMove = false;
                 _ri.velocity = Vector3.zero;
