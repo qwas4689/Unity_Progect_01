@@ -127,5 +127,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9038afd5e2ab11b41ae2510c172f6112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _riBullet: {fileID: 4370440072136915428}
-  Turret: {fileID: 2814799704387390075}
