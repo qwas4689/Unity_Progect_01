@@ -19,9 +19,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float XSpeed = _playerInput.X * MoveSpeed;
-        float ZSpeed = _playerInput.Z * MoveSpeed;
+        float XSpeed = _playerInput.Rotate * MoveSpeed;
+        float ZSpeed = _playerInput.Move * MoveSpeed;
 
-        _rigidbody.velocity = new Vector3(XSpeed, 0f, ZSpeed);
+        _rigidbody.velocity = new Vector3(XSpeed, 0f, ZSpeed).normalized;
     }
 }
