@@ -8,9 +8,9 @@ Unity 프로젝트 기획서는 아래와 같은 양식으로 본인 레포에 R
 
 3. 게임소개 : 오로직 이동과 점프만으로 목적지까지 가는 게임입니다.
 
-4. 원작 게임 링크 : https://www.youtube.com/watch?v=RXHN0kJAUDg
+4. 원작 게임 링크 : [Alt F4](https://www.youtube.com/watch?v=RXHN0kJAUDg)
 
-                    > 추가 팬게임 링크 : https://www.youtube.com/watch?v=32nrJOkFYis
+  - 추가 팬게임 링크 : [히포 F4](https://www.youtube.com/watch?v=32nrJOkFYis)
 
 링크
 프로젝트가 완료된 후 <a> 태그의 href 속성에 관련된 링크를 작성합니다.
