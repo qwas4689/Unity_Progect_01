@@ -1,27 +1,40 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, IComponent<PlayerController>
 {
-    private PlayerInput _playerInput;
     private Rigidbody _rigidbody;
+    
 
-    private float MoveSpeed = 6f;
-
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        _playerInput = GetComponent<PlayerInput>();
         _rigidbody = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void UpdateComponent(PlayerController owner)
     {
-        float XSpeed = _playerInput.Rotate * MoveSpeed;
-        float ZSpeed = _playerInput.Move * MoveSpeed;
+        move(owner);
+    }
 
-        _rigidbody.velocity = new Vector3(XSpeed, 0f, ZSpeed).normalized;
+    private void move(PlayerController owner)
+    {
+        Vector3 newVelocity = owner._playerInput.MoveVelocity;
+        float moveSpeed = 6f;
+
+        if (newVelocity != Vector3.zero)
+        {
+            LookAt(newVelocity);
+        }
+
+        _rigidbody.velocity = newVelocity * moveSpeed;
+    }
+
+    private void LookAt(Vector3 direction)
+    {
+        Quaternion targetAngle = Quaternion.LookRotation(direction);
+        _rigidbody.rotation = targetAngle;
+
     }
 }
