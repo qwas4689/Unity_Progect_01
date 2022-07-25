@@ -2,22 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInput : MonoBehaviour, IComponent<PlayerController>
+public class PlayerInput : MonoBehaviour
 {
-    public Vector3 MoveVelocity { get; private set; }
+    public float Zmoving { get; private set; }
+    public float Xmoving { get; private set; }
 
+    public bool Runing { get; private set; }
+    public bool Jumping { get; private set; }
+    public bool Rolling { get; private set; }
 
-    public void UpdateComponent(PlayerController owner)
+    // Start is called before the first frame update
+    void Start()
     {
-        UpdateVelocity();
+        Zmoving = 0f;
+        Xmoving = 0f;
     }
 
-    private void UpdateVelocity()
+    // Update is called once per frame
+    void Update()
     {
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
-        bool hasControl = !Mathf.Approximately(horizontal, 0f) || !Mathf.Approximately(vertical, 0f);
-        MoveVelocity = hasControl ? new Vector3(horizontal, 0f, vertical).normalized : Vector3.zero;
+        Zmoving = Input.GetAxis("Vertical");
+        Xmoving = Input.GetAxis("Horizontal");
+        Runing = Input.GetButton("Fire1");
 
+        Jumping = Input.GetButtonDown("Jump");
+        Rolling = Input.GetButton("Fire3");
     }
 }
