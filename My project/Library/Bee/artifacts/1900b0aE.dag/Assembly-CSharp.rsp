@@ -354,16 +354,19 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/Script/Cam/CamMovement.cs"
 "Assets/Script/Player/PlayerAnimID.cs"
 "Assets/Script/Player/PlayerInput.cs"
 "Assets/Script/Player/PlayerMovement.cs"
-"Assets/Script/밀어재끼기/PushObstacle.cs"
-"Assets/Script/빙빙돌아가는회전회오리/ObstacleMoving.cs"
-"Assets/Script/빙빙돌아가는회전회오리/ObstacleMoving2.cs"
+"Assets/Script/RagdollChanger/RagdollChanger.cs"
+"Assets/Script/Windmill/MoveWindmill.cs"
+"Assets/Script/Windmill/ObstacleFixMoving.cs"
+"Assets/Script/Windmill/ObstacleMoving.cs"
 "Assets/Script/위치추적슈터/TrackBullet.cs"
 "Assets/Script/위치추적슈터/TrackShooter.cs"
 "Assets/Script/칼날발사/BladeFire.cs"
 "Assets/Script/칼날발사/BladeShooter.cs"
+"Assets/Script/회전회오리/PushObstacle.cs"
 -langversion:9.0
 
 /deterministic
