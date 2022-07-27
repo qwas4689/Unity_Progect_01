@@ -16,7 +16,7 @@ public class JumpingPlatform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        num += 5;
+        num += 3f;
         _rigidbody.MoveRotation(Quaternion.Euler(0f, 0f, num));      
     }
 
