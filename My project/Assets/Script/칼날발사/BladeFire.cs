@@ -6,7 +6,7 @@ public class BladeFire : MonoBehaviour
 {
     public Rigidbody _riBullet;
 
-    private float destroyTime = 3f;
+    private float destroyTime = 2f;
     private float bulletSpeed = 10f;
 
     // Start is called before the first frame update

@@ -7,6 +7,7 @@ public class BladeShooter : MonoBehaviour
     public GameObject BladePrefab;
 
     private float UsingTime;
+    private float ShootBladeTime = 1f;
         
     // Start is called before the first frame update
     void Start()
@@ -19,8 +20,10 @@ public class BladeShooter : MonoBehaviour
     {
         UsingTime += Time.deltaTime;
 
-        if (UsingTime >= 0.8f)
+
+        if (UsingTime >= ShootBladeTime)
         {
+            ShootBladeTime = Random.Range(0.5f, 1.5f);
             Instantiate(BladePrefab, transform.position, transform.rotation);
             UsingTime = 0f;
         }

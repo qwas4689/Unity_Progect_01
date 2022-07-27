@@ -7,22 +7,27 @@ public class PlayerMovement : MonoBehaviour
     private PlayerInput _playerInput;
     private Rigidbody _rigidbody;
     private Animator _animator;
-    private CapsuleCollider _capsuleCollider;
 
     private float MoveSpeed = 6f;
+    public float returnTime;
 
     private bool isRollCoolTimeOn;
     private bool isJump;
     private bool isRoll;
 
     public Vector3 MoveVelocity { get; private set; }
+    public GameObject Cube;
+    public Transform Player;
+    public Transform Platform;
+
+
+    public int Item = 0;
 
     void Start()
     {
         _playerInput = GetComponent<PlayerInput>();
         _rigidbody = GetComponent<Rigidbody>();
         _animator = GetComponentInChildren<Animator>();
-        _capsuleCollider = GetComponent<CapsuleCollider>();
     }
 
     void FixedUpdate()
@@ -89,6 +94,22 @@ public class PlayerMovement : MonoBehaviour
             isJump = false;
             isRoll = false;
         }
+
+        if (collision.gameObject.tag == "Platform")
+        {
+            Vector3 distanceVector = Player.position - Platform.position;
+            Debug.Log(Vector3.Cross(transform.forward, distanceVector.normalized).y);
+        }
+    }
+
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Item")
+        {
+            other.gameObject.SetActive(false);
+        }
     }
 
     private void roll()
@@ -101,12 +122,8 @@ public class PlayerMovement : MonoBehaviour
 
             rollForward();
 
-            
-
             isRollCoolTimeOn = true;
             isRoll = true;
-
-
 
             Invoke("returnSpeed", 0.8f);
             Invoke("rollOut", 7f);

@@ -7,6 +7,8 @@ public class PushObstacle : MonoBehaviour
     public Transform _obstacle;
     public Rigidbody _ri;
     private bool isMaxMove = false;
+    private float moveMax = 8.5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,7 @@ public class PushObstacle : MonoBehaviour
 
         if (isMaxMove)
         {
-            _ri.AddForce(-2f, 0f, 0f);
+            _ri.AddForce(-5f, 0f, 0f);
             if (_obstacle.position.x <= -9f)
             {
                 isMaxMove = false;
@@ -34,9 +36,10 @@ public class PushObstacle : MonoBehaviour
         {
             _ri.AddForce(20f, 0f, 0f);
 
-            if (_obstacle.position.x >= 9f)
+            if (_obstacle.position.x >= moveMax)
             {
                 isMaxMove = true;
+                moveMax = Random.Range(-1f, 8.5f);
                 _ri.velocity = Vector3.zero;
             }
         }

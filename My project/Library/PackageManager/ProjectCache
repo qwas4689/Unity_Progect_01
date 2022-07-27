@@ -5,22 +5,22 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637940761800000000
-    m_Hash: 3062803731
+      ticks: 637944760741242779
+    m_Hash: 1404049538
   m_LockFileStatus:
     m_FilePath: C:/unity/Unity_Progect_01/My project/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637940761800000000
-    m_Hash: 4253110004
+      ticks: 637944760848558571
+    m_Hash: 595287276
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: C:/unity/Unity_Progect_01/My project/Packages
-m_EditorVersion: 2021.3.5f1 (40eb3a945986)
+m_EditorVersion: 2021.3.6f1 (7da38d85baf6)
 m_ResolvedPackages:
 - packageId: com.unity.cinemachine@2.8.6
   testable: 0
@@ -343,7 +343,7 @@ m_ResolvedPackages:
     version: default
   resolvedDependencies:
   - name: com.unity.ide.visualstudio
-    version: 2.0.15
+    version: 2.0.16
   - name: com.unity.test-framework
     version: 1.1.31
   - name: com.unity.ext.nunit
@@ -353,7 +353,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.ide.rider
-    version: 3.0.14
+    version: 3.0.15
   - name: com.unity.ide.vscode
     version: 1.2.5
   - name: com.unity.editorcoroutines
@@ -385,12 +385,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.1
     nextVersion: 
-- packageId: com.unity.ide.rider@3.0.14
+- packageId: com.unity.ide.rider@3.0.15
   testable: 0
   isDirectDependency: 1
-  version: 3.0.14
+  version: 3.0.15
   source: 1
-  resolvedPath: C:\unity\Unity_Progect_01\My project\Library\PackageCache\com.unity.ide.rider@3.0.14
+  resolvedPath: C:\unity\Unity_Progect_01\My project\Library\PackageCache\com.unity.ide.rider@3.0.15
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -439,7 +439,6 @@ m_ResolvedPackages:
     - 3.0.14
     - 3.0.15
     compatible:
-    - 3.0.14
     - 3.0.15
     verified: 3.0.15
   dependencies:
@@ -458,23 +457,23 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637861245770000000
+  datePublishedTicks: 637914298700000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
-    revision: e6bfc84a08a0876a2c20ec2ee0883b5ece331dfd
+    revision: b61ff0378932fdf03b5891e09c91728337de674c
     path: 
   unityLifecycle:
-    version: 3.0.14
+    version: 3.0.15
     nextVersion: 
-- packageId: com.unity.ide.visualstudio@2.0.15
+- packageId: com.unity.ide.visualstudio@2.0.16
   testable: 0
   isDirectDependency: 1
-  version: 2.0.15
+  version: 2.0.16
   source: 1
-  resolvedPath: C:\unity\Unity_Progect_01\My project\Library\PackageCache\com.unity.ide.visualstudio@2.0.15
+  resolvedPath: C:\unity\Unity_Progect_01\My project\Library\PackageCache\com.unity.ide.visualstudio@2.0.16
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -511,7 +510,6 @@ m_ResolvedPackages:
     - 2.0.15
     - 2.0.16
     compatible:
-    - 2.0.15
     - 2.0.16
     verified: 2.0.16
   dependencies:
@@ -536,16 +534,16 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637841884840000000
+  datePublishedTicks: 637914298680000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-    revision: ca1ece42f5a2c5484ba15a15bb975ccc1f6a1a3c
+    revision: c01855ef6461b821ab0226135e96a4ee86de96be
     path: 
   unityLifecycle:
-    version: 2.0.15
+    version: 2.0.16
     nextVersion: 
 - packageId: com.unity.ide.vscode@1.2.5
   testable: 0
