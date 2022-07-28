@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!isRoll)
         {
-            MoveVelocity = new Vector3(_playerInput.Xmoving, 0f, _playerInput.Zmoving).normalized;
+            MoveVelocity = new Vector3(0f, 0f, _playerInput.Zmoving).normalized;
 
             if (_playerInput.Runing)
             {

@@ -7,7 +7,7 @@ TerrainLayer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Layer_Rugged Mountains_2048x2048_textured_0008_2
-  m_DiffuseTexture: {fileID: 2800000, guid: 2e2862d41fa6a3f489754da7c772bdef, type: 3}
+  m_DiffuseTexture: {fileID: 2800000, guid: 5637f33d8ef634546a26c4e28e484f7d, type: 3}
   m_NormalMapTexture: {fileID: 2800000, guid: 4e316f97cf3c53649ae8203e7b9c4acd, type: 3}
   m_MaskMapTexture: {fileID: 0}
   m_TileSize: {x: 8, y: 8}
