@@ -4,18 +4,26 @@ using UnityEngine;
 
 public class TrackBullet : MonoBehaviour
 {
-    private float destroyTime = 10f;
+    // private float destroyTime = 20f;
     private float bulletSpeed = 20f;
 
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, destroyTime);
+        // Destroy(gameObject, destroyTime);
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.Translate(0, 0, bulletSpeed * Time.deltaTime);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Floor")
+        {
+            Destroy(gameObject);
+        }
     }
 }

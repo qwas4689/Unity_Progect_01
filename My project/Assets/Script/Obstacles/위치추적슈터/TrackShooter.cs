@@ -20,12 +20,12 @@ public class TrackShooter : MonoBehaviour
     {
         UsingTime += Time.deltaTime;
 
-        if (UsingTime >= 1.9f)
+        if (UsingTime >= 9.9f)
         {
             transform.LookAt(Player);
         }
 
-        if (UsingTime >= 2f)
+        if (UsingTime >= 10f)
         {
             Instantiate(TrackPrefab, transform.position, transform.rotation);
             UsingTime = 0f;
