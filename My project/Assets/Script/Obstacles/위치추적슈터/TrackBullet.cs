@@ -5,7 +5,7 @@ using UnityEngine;
 public class TrackBullet : MonoBehaviour
 {
     // private float destroyTime = 20f;
-    private float bulletSpeed = 20f;
+    private float bulletSpeed = 50f;
 
     // Start is called before the first frame update
     void Start()

@@ -23,7 +23,7 @@ public class MoveWindmill : MonoBehaviour
         ReturnTime += Time.deltaTime;
         _rigidbody.velocity = moveForward * Speed;
 
-        if (ReturnTime >= 3f)
+        if (ReturnTime >= 5f)
         {
             Speed *= -1;
             ReturnTime = 0f;

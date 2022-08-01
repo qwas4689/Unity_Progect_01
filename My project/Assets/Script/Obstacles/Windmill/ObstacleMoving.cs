@@ -8,7 +8,7 @@ public class ObstacleMoving : MonoBehaviour
     private bool isMaxSpeed;
 
     private float Speed;
-    private float MaxSpeed = 500f;
+    private float MaxSpeed = 300f;
     private float MinSpeed = 0f;
 
     public Transform Target;

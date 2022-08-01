@@ -94,15 +94,7 @@ public class PlayerMovement : MonoBehaviour
             isJump = false;
             isRoll = false;
         }
-
-        if (collision.gameObject.tag == "Platform")
-        {
-            Vector3 distanceVector = Player.position - Platform.position;
-            Debug.Log(Vector3.Cross(transform.forward, distanceVector.normalized).y);
-        }
     }
-
-
 
     private void OnTriggerEnter(Collider other)
     {

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Rotation : MonoBehaviour
 {
-    public Transform _object;
-    
+    private Renderer _colorChange;
+
     private float randNumX = 2f;
     private float randNumY = 2f;
     private float randNumZ = 2f;
@@ -14,22 +14,26 @@ public class Rotation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        _colorChange = gameObject.GetComponent<Renderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        returnTime += Time.deltaTime;
-
-        if (returnTime >= 2f)
+        if (_colorChange.material.color == Color.red)
         {
-            randNumX = Random.Range(-2f, 2f);
-            randNumY = Random.Range(-5f, 5f);
-            randNumZ = Random.Range(-2f, 2f);
 
-            returnTime = 0f;
+            returnTime += Time.deltaTime;
+
+            if (returnTime >= 2f)
+            {
+                randNumX = Random.Range(-2f, 2f);
+                randNumY = Random.Range(-5f, 5f);
+                randNumZ = Random.Range(-2f, 2f);
+
+                returnTime = 0f;
+            }
+            gameObject.transform.Rotate(randNumX, randNumY, randNumZ);
         }
-        _object.Rotate(randNumX, randNumY, randNumZ);
     }
 }
